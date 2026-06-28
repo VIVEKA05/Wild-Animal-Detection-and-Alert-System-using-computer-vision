@@ -35,11 +35,11 @@ WILD_BOAR_SOUND = r"C:\Users\Vivek\Documents\Animalnew\wildboar.mp3"
 # TWILIO SETTINGS
 # =====================================
 
-TWILIO_ACCOUNT_SID = "AC47ebe3dec8628c7c5c67f5a1a95e5a14"
-TWILIO_AUTH_TOKEN  = "6f5d6db436679d1a54881dde1a20f001"
+TWILIO_ACCOUNT_SID = "your SID"
+TWILIO_AUTH_TOKEN  = "Your token"
 
 TWILIO_WHATSAPP_FROM = "whatsapp:+14155238886"
-TWILIO_WHATSAPP_TO   = "whatsapp:+916360264132"
+TWILIO_WHATSAPP_TO   = "whatsapp:+91xxxxxxxxxx"
 
 SNAPSHOT_SAVE_PATH = r"C:\Users\Vivek\Documents\Animalnew\snapshot.jpg"
 
