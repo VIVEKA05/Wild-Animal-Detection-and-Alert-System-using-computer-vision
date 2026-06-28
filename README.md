@@ -1,6 +1,5 @@
-# Wild-Animal-Detection-and-Alert-System-using-computer-vision
-The goal of this project is to develop a low-cost, AI-powered wildlife detection system that helps protect farms and villages by identifying dangerous animals in real time and automatically triggering deterrent actions. The future version will operate independently on a Raspberry Pi with automated camera movement and wireless audio alerts.
-🦁 AI-Based Wild Animal Detection and Repellent System
+
+##🦁 AI-Based Wild Animal Detection and Repellent System
 
 An AI-powered computer vision project that detects wild animals in real time using a USB camera. Once an animal is identified, the system can trigger an appropriate warning sound to help deter the animal and reduce human-wildlife conflicts.
 
