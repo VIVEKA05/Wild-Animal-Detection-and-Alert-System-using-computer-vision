@@ -1,80 +1,50 @@
 
+# 🦁 AI-Based Wild Animal Detection and Alert System
 
-## 🦁 AI-Based Wild Animal Detection and Repellent System
+## Overview
 
-An AI-powered computer vision project that detects wild animals in real time using a USB camera. Once an animal is identified, the system can trigger an appropriate warning sound to help deter the animal and reduce human-wildlife conflicts.
+An AI-powered wildlife monitoring system that detects wild animals in real time using a USB camera and immediately sends **WhatsApp alerts** using **Twilio**. The system is designed to help reduce human-wildlife conflicts by notifying users as soon as a dangerous animal is detected.
 
-The current version runs on a laptop using a USB camera and can detect:
+The current version runs on a laptop with a USB camera and uses a deep learning model for real-time image classification.
+
+### Currently Supported Animals
 
 * 🐘 Elephant
 * 🐗 Wild Boar
 * 🐅 Tiger
 
-The detection model is built using Python, OpenCV, and TensorFlow, providing real-time image classification from live video.
+---
+
+# ✨ Features
+
+* 🎥 Real-time animal detection using a USB camera
+* 🤖 AI-powered image classification with TensorFlow/Keras
+* 📱 Instant WhatsApp notifications using Twilio
+* 📊 Live confidence score display
+* 💻 Laptop-based implementation
+* ⚡ Real-time video processing with OpenCV
+* 🔄 Easy to extend with additional animal classes
 
 ---
 
-## Features
+# 🛠️ Technologies Used
 
-* ✅ Real-time animal detection
-* ✅ Live video processing using USB Camera
-* ✅ AI image classification
-* ✅ Detects Elephant, Wild Boar, and Tiger
-* ✅ Displays prediction confidence
-* ✅ Ready for future hardware integration
+* Python
+* OpenCV
+* TensorFlow / Keras
+* NumPy
+* Twilio WhatsApp API
 
 ---
 
-## Current Hardware
+# 📷 Current Hardware
 
 * Laptop
 * USB Camera
 
 ---
 
-## Software Used
-
-* Python
-* OpenCV
-* TensorFlow / Keras
-* NumPy
-
----
-
-## Future Improvements
-
-This project will be expanded into a complete embedded wildlife protection system.
-
-Planned upgrades include:
-
-* 🍓 Raspberry Pi for standalone operation
-* 🔊 Bluetooth Speaker for wireless warning sounds
-* ⚙ Servo Motor to automatically rotate the camera toward detected animals
-* 📡 Wireless communication
-* 🌙 Night vision camera support
-* 🌧 Weatherproof outdoor enclosure
-* ☀ Solar-powered operation
-* 📱 Mobile application for monitoring
-* ☁ Cloud logging and analytics
-* 📍 GPS location tracking
-* 📷 Multiple camera support
-* 🎯 YOLO-based object detection for improved accuracy
-* 🔔 SMS/Email alerts when animals are detected
-
----
-
-## Applications
-
-* Agricultural farms
-* Forest boundary monitoring
-* Wildlife conservation
-* Human-animal conflict prevention
-* Village protection systems
-* Smart surveillance
-
----
-
-## Project Workflow
+# 📲 Alert Workflow
 
 ```text
 USB Camera
@@ -83,30 +53,53 @@ USB Camera
 Capture Live Video
       │
       ▼
-AI Model (TensorFlow)
+AI Detection Model
       │
       ▼
-Animal Detected
+Animal Identified
       │
-      ▼
-Display Animal Name
+      ├────────► Display Detection on Screen
       │
-      ▼
-Play Warning Sound
-      │
-      ▼
-(Future)
-Rotate Servo
-      │
-      ▼
-Bluetooth Speaker
-      │
-      ▼
-Raspberry Pi Standalone System
+      └────────► Send Instant WhatsApp Alert (Twilio)
+```
 
+---
 
-## Project Goal
+# 🚀 Future Enhancements
 
-The goal of this project is to develop a low-cost, AI-powered wildlife detection system that helps protect farms and villages by identifying dangerous animals in real time and automatically triggering deterrent actions. The future version will operate independently on a Raspberry Pi with automated camera movement and wireless audio alerts.
+The project is planned to evolve into a complete standalone wildlife monitoring system.
 
-This description is suitable for a professional GitHub repository and clearly communicates both the current implementation and your future roadmap.
+### Planned Features
+
+* 🍓 Raspberry Pi standalone deployment
+* 🔊 Bluetooth speaker to play animal-specific deterrent sounds
+* ⚙️ Servo motor for automatic camera tracking
+* 📷 Pan-and-tilt camera system
+* 🌙 Night vision camera support
+* ☀️ Solar-powered operation
+* 📍 GPS location tagging in alerts
+* ☁️ Cloud database for detection history
+* 📊 Web dashboard for monitoring
+* 📱 Android application
+* 🎯 YOLO-based object detection for higher accuracy
+* 📡 Multiple camera support
+* 🔔 SMS and Email notifications
+
+---
+
+# 🎯 Applications
+
+* Smart Agriculture
+* Farm Protection
+* Forest Border Monitoring
+* Wildlife Conservation
+* Human-Wildlife Conflict Prevention
+* Village Safety Systems
+
+---
+
+# 📌 Project Goal
+
+The objective of this project is to develop a low-cost, AI-powered wildlife detection system capable of identifying dangerous animals in real time and instantly notifying users through WhatsApp. Future versions will operate independently on a Raspberry Pi, automatically track animals using a servo-controlled camera, and activate Bluetooth speakers to play deterrent sounds, creating a complete smart wildlife monitoring and prevention solution.
+
+---
