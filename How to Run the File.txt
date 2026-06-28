@@ -1,0 +1,228 @@
+Link to download Dataset:- https://www.kaggle.com/datasets/vivekagond/wild-animals
+
+
+
+---
+
+# 📱 WhatsApp Alert Integration using Twilio
+
+The AI Wildlife Detection System is integrated with the **Twilio WhatsApp API** to provide **instant real-time notifications** whenever a wild animal is detected. As soon as the AI model identifies an animal with high confidence, the system automatically sends a WhatsApp message to the registered mobile number containing the detected animal's name, confidence score, and the detection timestamp.
+
+This feature allows farmers, forest officials, or security personnel to receive immediate alerts even when they are away from the monitoring system.
+
+---
+
+## 📌 How It Works
+
+```text
+USB Camera
+     │
+     ▼
+Capture Live Video
+     │
+     ▼
+AI Detection Model
+     │
+     ▼
+Animal Detected
+     │
+     ▼
+Generate Alert Message
+     │
+     ▼
+Twilio WhatsApp API
+     │
+     ▼
+WhatsApp Notification Sent
+```
+
+---
+
+# WhatsApp Alert Format
+
+When an animal is detected, the system sends a message similar to:
+
+```text
+🚨 ANIMAL ALERT 🚨
+
+Animal Detected : ELEPHANT
+Confidence      : 98.75%
+Time            : 28-06-2026 10:45:20
+
+Please take necessary precautions!
+```
+
+---
+
+# Twilio Configuration
+
+Before running the project, create a free Twilio account and configure the following credentials in the Python program.
+
+```python
+TWILIO_ACCOUNT_SID = "YOUR_ACCOUNT_SID"
+TWILIO_AUTH_TOKEN = "YOUR_AUTH_TOKEN"
+
+TWILIO_WHATSAPP_FROM = "whatsapp:+14155238886"
+TWILIO_WHATSAPP_TO = "whatsapp:+91XXXXXXXXXX"
+```
+
+### Required Details
+
+* Twilio Account SID
+* Twilio Auth Token
+* Twilio Sandbox WhatsApp Number
+* Your Verified WhatsApp Number
+
+> **Note:** During development, Twilio Sandbox requires your WhatsApp number to be joined to the sandbox before messages can be received.
+
+---
+
+# Downloading the AI Model
+
+The trained model file (`best_animal_model.pth`) is **not included** in this repository because GitHub has file size limitations.
+
+Download the trained model from the link below:
+
+```text
+📥 Model Download
+
+https://YOUR_GOOGLE_DRIVE_LINK
+```
+
+After downloading, place the model file in the project directory:
+
+```text
+Animal-Detection-System/
+│
+├── best_animal_model.pth
+├── Detect.py
+├── elephant.mp3
+├── tiger.mp3
+├── wildboar.mp3
+└── requirements.txt
+```
+
+---
+
+# Project Structure
+
+```text
+Animal-Detection-System/
+│
+├── Detect.py
+├── best_animal_model.pth
+├── elephant.mp3
+├── tiger.mp3
+├── wildboar.mp3
+├── snapshot.jpg
+├── requirements.txt
+├── README.md
+└── Assets/
+```
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/YourUsername/Animal-Detection-System.git
+```
+
+Move into the project directory
+
+```bash
+cd Animal-Detection-System
+```
+
+Install all required libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+Download the trained model from the link provided above and place it inside the project folder.
+
+Update your Twilio credentials in `Detect.py`.
+
+Run the project
+
+```bash
+python Detect.py
+```
+
+---
+
+# AI Model Information
+
+| Property            | Value                      |
+| ------------------- | -------------------------- |
+| Architecture        | MobileNetV3 Large          |
+| Framework           | PyTorch                    |
+| Input Size          | 224 × 224                  |
+| Classes             | Elephant, Tiger, Wild Boar |
+| Transfer Learning   | Yes                        |
+| Real-Time Inference | Supported                  |
+
+---
+
+# Detection Pipeline
+
+```text
+Live Camera
+      │
+      ▼
+Frame Capture
+      │
+      ▼
+Image Preprocessing
+      │
+      ▼
+MobileNetV3 Large Model
+      │
+      ▼
+Prediction
+      │
+      ▼
+Confidence Check
+      │
+      ├────────────► Unknown
+      │
+      ▼
+Animal Detected
+      │
+      ├────────────► Play Animal Warning Sound
+      │
+      ├────────────► Display Confidence
+      │
+      └────────────► Send WhatsApp Alert using Twilio
+```
+
+---
+
+# Future Enhancements
+
+* 🍓 Raspberry Pi standalone deployment
+* ⚙️ Servo motor for automatic camera tracking
+* 🔊 Bluetooth speaker for wireless warning sounds
+* 🌙 Night vision support
+* ☀️ Solar-powered operation
+* 📍 GPS location in WhatsApp alerts
+* ☁️ Cloud database integration
+* 📊 Web dashboard
+* 📱 Android/iOS application
+* 🎯 YOLOv11-based object detection
+* 📷 Multiple camera support
+* 📧 SMS and Email notifications
+* 📸 Send captured animal image along with the WhatsApp alert
+
+---
+
+## ⭐ Support
+
+If you find this project useful, please **⭐ Star** the repository and feel free to contribute by opening issues or submitting pull requests.
+
+---
+
+**Tip:** Instead of saying "Download the model from the link below," create a `MODEL_DOWNLOAD.md` file (or use the Releases section) containing your Google Drive or OneDrive link. This keeps your README clean and makes it easy for anyone to set up the project.
