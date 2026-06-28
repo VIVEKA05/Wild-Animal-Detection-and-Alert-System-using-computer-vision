@@ -224,5 +224,3 @@ Animal Detected
 If you find this project useful, please **⭐ Star** the repository and feel free to contribute by opening issues or submitting pull requests.
 
 ---
-
-**Tip:** Instead of saying "Download the model from the link below," create a `MODEL_DOWNLOAD.md` file (or use the Releases section) containing your Google Drive or OneDrive link. This keeps your README clean and makes it easy for anyone to set up the project.
